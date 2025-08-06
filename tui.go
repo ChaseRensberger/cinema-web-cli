@@ -182,7 +182,7 @@ func addProjectForm() error {
 				Description("Release year (e.g., 2025)").
 				Value(&yearStr).
 				Validate(func(s string) error {
-					year, err := strconv.Atoi(s)
+					_, err := strconv.Atoi(s)
 					if err != nil {
 						return fmt.Errorf("must be a valid year")
 					}
