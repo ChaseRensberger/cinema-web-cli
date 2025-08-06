@@ -1,3 +1,5 @@
 *.local
 cinema-cli
 *.json
+# Added by goreleaser init:
+dist/
